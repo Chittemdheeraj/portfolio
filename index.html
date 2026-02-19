@@ -5,179 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chittem Dheeraj | Portfolio</title>
     
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --accent: #00e5ff;
-            --accent-dark: #2979ff;
-            --bg: #030712;
-            --text: #f3f4f6;
-            --glass: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Space Grotesk', sans-serif; scroll-behavior: smooth; }
-        body { background: var(--bg); color: var(--text); overflow-x: hidden; }
-
-        /* Animated Background */
-        .particles { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; overflow: hidden; }
-        .particle { position: absolute; background: var(--accent); border-radius: 50%; opacity: 0.1; animation: float 15s infinite linear; }
-        .particle:nth-child(1) { width: 100px; height: 100px; top: 20%; left: 10%; }
-        .particle:nth-child(2) { width: 150px; height: 150px; bottom: 10%; right: 10%; animation-delay: -5s; }
-        @keyframes float { 0% { transform: translateY(0) scale(1); opacity: 0.1; } 50% { opacity: 0.2; } 100% { transform: translateY(-100vh) scale(1.2); opacity: 0; } }
-
-        /* Navigation */
-        nav { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 8%; position: fixed; width: 100%; z-index: 1000; background: rgba(3, 7, 18, 0.8); backdrop-filter: blur(20px); border-bottom: 1px solid var(--glass-border); }
-        .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: 2px; }
-        .logo span { color: var(--accent); }
-        .nav-links { display: flex; list-style: none; gap: 2rem; }
-        .nav-links a { text-decoration: none; color: var(--text); opacity: 0.7; transition: 0.3s; }
-        .nav-links a:hover { opacity: 1; color: var(--accent); }
-
-        /* Hero */
-        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; padding: 0 10%; }
-        .hero-content { max-width: 800px; }
-        .badge { display: inline-block; padding: 6px 16px; background: rgba(0, 229, 255, 0.1); border: 1px solid var(--accent); color: var(--accent); border-radius: 20px; font-size: 0.8rem; margin-bottom: 2rem; }
-        .hero h1 { font-size: clamp(2.5rem, 8vw, 4.5rem); line-height: 1.1; margin-bottom: 1.5rem; }
-        .hero h1 span { background: linear-gradient(90deg, var(--accent), var(--accent-dark)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .hero p { font-size: 1.2rem; opacity: 0.7; margin-bottom: 2.5rem; }
-
-        .btn { padding: 1rem 2.5rem; border-radius: 12px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; cursor: pointer; border: none; }
-        .primary-btn { background: var(--accent); color: #000; margin-right: 1rem; }
-        .secondary-btn { border: 1px solid var(--accent); color: var(--accent); background: transparent; }
-        .btn:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 229, 255, 0.2); }
-
-        /* Sections */
-        .section { padding: 8rem 10%; }
-        .section-title { font-size: 2.5rem; margin-bottom: 4rem; text-align: center; }
-        .glass-card { background: var(--glass); backdrop-filter: blur(15px); border: 1px solid var(--glass-border); border-radius: 24px; padding: 2.5rem; transition: 0.4s; }
-        .glass-card:hover { border-color: var(--accent); transform: translateY(-10px); }
-
-        /* Grids */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
-        .skill-card i { font-size: 3rem; color: var(--accent); margin-bottom: 1.5rem; }
-        .project-card .p-tags { margin-top: 1.5rem; display: flex; gap: 10px; }
-        .p-tags span { background: rgba(255,255,255,0.05); padding: 5px 12px; border-radius: 6px; font-size: 0.8rem; color: var(--accent); }
-
-        /* Footer */
-        footer { text-align: center; padding: 4rem 10%; background: rgba(0,0,0,0.3); }
-        .social-links { margin-bottom: 2rem; }
-        .social-links a { color: var(--text); font-size: 1.8rem; margin: 0 15px; opacity: 0.6; transition: 0.3s; }
-        .social-links a:hover { color: var(--accent); opacity: 1; transform: translateY(-5px); display: inline-block; }
-
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .section { padding: 5rem 5%; }
-            .hero h1 { font-size: 2.8rem; }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="particles">
-        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-    </div>
+    <div class="mesh-bg"></div>
 
-    <nav>
+    <nav id="navbar">
         <div class="logo">DHEERAJ<span>.</span></div>
         <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
+        </div>
     </nav>
 
-    <section class="hero" id="home">
-        <div class="hero-content" data-aos="fade-up">
-            <div class="badge">Open for Collaboration</div>
-            <h1>Full-Stack <span>Developer</span> & Data Specialist</h1>
-            <p>BCA Graduate from Jain University. Specialized in building interactive web experiences and data-driven dashboards with modern technologies.</p>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <span class="greeting">Hello, World!</span>
+            <h1>I'm <span class="highlight">Chittem Dheeraj</span></h1>
+            <h2 id="typewriter"></h2>
+            <p>BCA Graduate from Jain University. Specialized in turning data into insights and ideas into interactive web experiences.</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn primary-btn">View My Work</a>
-                <a href="resume/Chittem_Dheeraj_Resume.pdf" class="btn secondary-btn" download>Download CV</a>
+                <a href="#projects" class="btn primary">View Work</a>
+                <a href="resume/Chittem_Dheeraj_Resume.pdf" class="btn secondary" download>Get Resume</a>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section id="about" class="section" data-aos="fade-up">
-        <div class="glass-card">
-            <h2 class="section-title">Professional Profile</h2>
-            <p style="font-size: 1.1rem; line-height: 1.8; opacity: 0.8;">
-                I am a results-oriented developer with a strong foundation in Python, SQL, and Web Technologies. 
-                With practical internship experience in Data Management and Cloud Computing, I enjoy creating 
-                solutions that are both visually appealing and technically robust.
-            </p>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2 class="section-title">Core Expertise</h2>
-        <div class="grid">
-            <div class="glass-card skill-card" data-aos="zoom-in">
-                <i class="fas fa-code"></i>
-                <h3>Engineering</h3>
-                <p>Python, JavaScript, HTML5, CSS3</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="zoom-in" data-aos-delay="100">
-                <i class="fas fa-database"></i>
-                <h3>Data Analysis</h3>
-                <p>SQL, Power BI, Pandas, PySpark</p>
-            </div>
-            <div class="glass-card skill-card" data-aos="zoom-in" data-aos-delay="200">
-                <i class="fas fa-cloud"></i>
-                <h3>Infrastructure</h3>
-                <p>Git, GitHub, Cloud Fundamentals</p>
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-content">
+                <p>I am a highly motivated tech professional with a solid foundation in <strong>Python, SQL, and Full-Stack Web Development</strong>. Having completed my BCA at Jain University, I bridge the gap between technical logic and user-centric design.</p>
+                <div class="skills-tags">
+                    <span>Python</span><span>SQL</span><span>JavaScript</span><span>Power BI</span><span>HTML/CSS</span><span>Pandas</span>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
-        <h2 class="section-title">Recent Projects</h2>
-        <div class="grid">
-            <div class="glass-card project-card" data-aos="fade-up">
-                <h3>Sales Insights Dashboard</h3>
-                <p>Interactive revenue tracking using Power BI and SQL for business optimization.</p>
-                <div class="p-tags"><span>Power BI</span><span>SQL</span></div>
-            </div>
-            <div class="glass-card project-card" data-aos="fade-up" data-aos-delay="100">
-                <h3>Smart Task Tracker</h3>
-                <p>A high-performance JS application for real-time workflow management.</p>
-                <div class="p-tags"><span>JavaScript</span><span>UI/UX</span></div>
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Sales Insights Dashboard</h3>
+                    <p>End-to-end data analysis using Power BI and SQL to visualize business growth and regional trends.</p>
+                    <div class="p-tech">#PowerBI #SQL</div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-database"></i></div>
+                    <h3>Order Management</h3>
+                    <p>A robust MySQL system designed for high-efficiency data storage and relational management.</p>
+                    <div class="p-tech">#MySQL #Python</div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-code"></i></div>
+                    <h3>Smart Web Tracker</h3>
+                    <p>Interactive task management application focused on seamless UI and local persistence.</p>
+                    <div class="p-tech">#JavaScript #Web</div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-        <div class="social-links">
-            <a href="mailto:chittemdheeraj22@gmail.com"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="footer-content">
+            <h2>Let's Build Together</h2>
+            <div class="social-icons">
+                <a href="mailto:chittemdheeraj22@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2026 Chittem Dheeraj | Designed for the Future</p>
         </div>
-        <p>&copy; 2026 Chittem Dheeraj | Designed for Excellence</p>
     </footer>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize Animations
-        AOS.init({ duration: 1000, once: true });
-
-        // Smooth Scrolling Logic
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
