@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chittem Dheeraj | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <div class="particles">
         <div class="particle"></div><div class="particle"></div><div class="particle"></div>
-        <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+        <div class="particle"></div><div class="particle"></div>
     </div>
 
     <nav>
@@ -23,14 +26,13 @@
             <li><a href="#projects">Work</a></li>
             <li><a href="#contact">Connect</a></li>
         </ul>
-        <div class="menu-btn"><i class="fas fa-bars"></i></div>
     </nav>
 
     <section class="hero">
         <div class="hero-content" data-aos="zoom-out-up">
-            <div class="badge">Available for Projects</div>
+            <div class="badge">Open for Opportunities</div>
             <h1>Crafting <span>Digital</span> Solutions & Data Insights</h1>
-            <p>BCA Graduate specialized in building scalable web applications and extracting value from complex datasets. Transforming ideas into high-performance reality.</p>
+            <p>BCA Graduate specialized in building scalable web applications and extracting value from complex datasets. Focused on high-performance development and clean UI/UX.</p>
             <div class="hero-btns">
                 <a href="#projects" class="btn primary-btn">Explore Projects</a>
                 <a href="resume/Chittem_Dheeraj_Resume.pdf" class="btn secondary-btn" download>Get Resume</a>
@@ -39,15 +41,9 @@
     </section>
 
     <section id="about" class="section" data-aos="fade-up">
-        <div class="glass-card about-grid">
-            <div class="about-text">
-                <h2 class="section-title" style="text-align: left;">About Me</h2>
-                <p>I am a detail-oriented developer with a passion for clean code and data-driven decision making. With a foundation from <strong>Jain University</strong> and hands-on internship experience, I bridge the gap between frontend aesthetics and backend logic.</p>
-                <div class="stats">
-                    <div class="stat-item"><strong>3+</strong><span>Internships</span></div>
-                    <div class="stat-item"><strong>10+</strong><span>Projects</span></div>
-                </div>
-            </div>
+        <div class="glass-card about-content">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a detail-oriented developer with a passion for clean code and data-driven decision making. With a foundation from <strong>Jain University</strong> and hands-on internship experience, I bridge the gap between frontend aesthetics and backend logic.</p>
         </div>
     </section>
 
@@ -64,11 +60,6 @@
                 <h3>Data Science</h3>
                 <p>SQL, Power BI, Pandas, PySpark</p>
             </div>
-            <div class="skill-card glass-card" data-aos="flip-left" data-aos-delay="200">
-                <i class="fas fa-cloud icon"></i>
-                <h3>Infrastructure</h3>
-                <p>Git, GitHub, Cloud Fundamentals</p>
-            </div>
         </div>
     </section>
 
@@ -76,19 +67,13 @@
         <h2 class="section-title">Selected Work</h2>
         <div class="projects-grid">
             <div class="project-card glass-card" data-aos="fade-up">
-                <div class="p-icon"><i class="fas fa-chart-pie"></i></div>
+                <i class="fas fa-chart-pie p-icon"></i>
                 <h3>Business Insights Dashboard</h3>
-                <p>Advanced Power BI visualization for revenue trend analysis and regional performance.</p>
+                <p>Power BI visualization for revenue trend analysis and regional performance.</p>
                 <div class="p-tags"><span>Power BI</span><span>SQL</span></div>
             </div>
             <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="p-icon"><i class="fas fa-utensils"></i></div>
-                <h3>Order Management System</h3>
-                <p>A robust MySQL-backed system optimized for high-concurrency database transactions.</p>
-                <div class="p-tags"><span>MySQL</span><span>Backend</span></div>
-            </div>
-            <div class="project-card glass-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="p-icon"><i class="fas fa-tasks"></i></div>
+                <i class="fas fa-tasks p-icon"></i>
                 <h3>Smart Tracker</h3>
                 <p>Responsive web application featuring real-time state management and local storage.</p>
                 <div class="p-tags"><span>JavaScript</span><span>UI/UX</span></div>
@@ -98,17 +83,16 @@
 
     <footer id="contact" class="section">
         <div class="footer-glass glass-card">
-            <h2>Ready to collaborate?</h2>
+            <h2>Let's Connect</h2>
             <div class="social-links">
                 <a href="mailto:chittemdheeraj22@gmail.com"><i class="fas fa-envelope"></i></a>
                 <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <p>&copy; 2026 Chittem Dheeraj | Built with Modern Web Tech</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true });</script>
+    <script src="script.js"></script>
 </body>
 </html>
