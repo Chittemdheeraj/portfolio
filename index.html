@@ -3,90 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chittem Dheeraj | Portfolio</title>
-    
+    <title> Chittem Dheeraj's | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="mesh-bg"></div>
+    <div class="bg-glow"></div>
 
-    <nav id="navbar">
-        <div class="logo">DHEERAJ<span>.</span></div>
+    <nav>
+        <div class="logo"> Chittem Dheeraj <span>.</span></div>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">My Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="burger">
-            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
-        </div>
     </nav>
 
-    <header class="hero" id="home">
-        <div class="hero-content">
-            <span class="greeting">Hello, World!</span>
-            <h1>I'm <span class="highlight">Chittem Dheeraj</span></h1>
-            <h2 id="typewriter"></h2>
-            <p>BCA Graduate from Jain University. Specialized in turning data into insights and ideas into interactive web experiences.</p>
-            <div class="hero-btns">
-                <a href="#projects" class="btn primary">View Work</a>
-                <a href="resume/Chittem_Dheeraj_Resume.pdf" class="btn secondary" download>Get Resume</a>
+    <header id="home" class="hero">
+        <div class="container">
+            <p class="pre-title">My Digital Experiences</p>
+            <h1 class="glitch-text">Chittem Dheeraj</h1>
+            <h2 class="dynamic-text">I am a <span id="typewriter"></span></h2>
+            <p class="hero-desc">BCA Graduate from Jain University. Specializing in Full-Stack Development and Data Insights with a passion for clean, high-impact design.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="tel:+919000019288" class="btn btn-secondary"><i class="fas fa-phone"></i> Call Me</a>
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="glass-card about-content">
-                <p>I am a highly motivated tech professional with a solid foundation in <strong>Python, SQL, and Full-Stack Web Development</strong>. Having completed my BCA at Jain University, I bridge the gap between technical logic and user-centric design.</p>
-                <div class="skills-tags">
-                    <span>Python</span><span>SQL</span><span>JavaScript</span><span>Power BI</span><span>HTML/CSS</span><span>Pandas</span>
-                </div>
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-reveal><i class="fab fa-python"></i><span>Python</span></div>
+                <div class="skill-card" data-reveal><i class="fas fa-database"></i><span>SQL</span></div>
+                <div class="skill-card" data-reveal><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card" data-reveal><i class="fab fa-react"></i><span>React</span></div>
+                <div class="skill-card" data-reveal><i class="fas fa-chart-pie"></i><span>Data Analytics</span></div>
+                <div class="skill-card" data-reveal><i class="fab fa-github"></i><span>Github</span></div>
             </div>
         </div>
     </section>
 
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Featured Work</h2>
             <div class="projects-grid">
-                <div class="glass-card project-card">
-                    <div class="p-icon"><i class="fas fa-chart-line"></i></div>
-                    <h3>Sales Insights Dashboard</h3>
-                    <p>End-to-end data analysis using Power BI and SQL to visualize business growth and regional trends.</p>
-                    <div class="p-tech">#PowerBI #SQL</div>
+                <div class="project-card" data-reveal>
+                    <div class="project-info">
+                        <h3>Sales Insights Dashboard</h3>
+                        <p>End-to-end data pipeline visualizing business growth metrics.</p>
+                        <a href="https://github.com/Chittemdheeraj" target="_blank" class="project-link">Source Code <i class="fas fa-code"></i></a>
+                    </div>
                 </div>
-                <div class="glass-card project-card">
-                    <div class="p-icon"><i class="fas fa-database"></i></div>
-                    <h3>Order Management</h3>
-                    <p>A robust MySQL system designed for high-efficiency data storage and relational management.</p>
-                    <div class="p-tech">#MySQL #Python</div>
-                </div>
-                <div class="glass-card project-card">
-                    <div class="p-icon"><i class="fas fa-code"></i></div>
-                    <h3>Smart Web Tracker</h3>
-                    <p>Interactive task management application focused on seamless UI and local persistence.</p>
-                    <div class="p-tech">#JavaScript #Web</div>
+                <div class="project-card" data-reveal>
+                    <div class="project-info">
+                        <h3>Smart Task Tracker</h3>
+                        <p>Modern productivity app built with a Glassmorphism UI focus.</p>
+                        <a href="https://github.com/Chittemdheeraj" target="_blank" class="project-link">Source Code <i class="fas fa-code"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <footer id="contact">
-        <div class="footer-content">
-            <h2>Let's Build Together</h2>
-            <div class="social-icons">
-                <a href="mailto:chittemdheeraj22@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="footer-content container">
+            <h2 class="footer-heading">Let's Build Together</h2>
+            <p class="footer-tagline">Currently available for new opportunities and collaborations.</p>
+            
+            <div class="contact-methods">
+                <a href="tel:+919000019288" class="contact-pill"><i class="fas fa-phone"></i> +91 9000019288</a>
+                <a href="mailto:chittemdheeraj22@gmail.com" class="contact-pill"><i class="fas fa-envelope"></i> Email Me</a>
             </div>
-            <p>&copy; 2026 Chittem Dheeraj | Designed for the Future</p>
+
+            <div class="social-icons">
+                <a href="mailto:chittemdheeraj22@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Chittemdheeraj" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <hr class="footer-divider">
+            <p class="copyright">&copy; 2026 Chittem Dheeraj | Designed with Passion | Thank You For Visiting My Portfolio.....Have a Great Day.....! </p>
         </div>
     </footer>
 
