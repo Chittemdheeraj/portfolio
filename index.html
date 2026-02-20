@@ -1,39 +1,95 @@
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#achievements">Achievements</a></li> <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chittem Dheeraj's | Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
-<section id="achievements" class="achievements-section">
-    <div class="container">
-        <h2 class="section-title">Milestones & Achievements</h2>
-        <div class="achievements-grid">
-            
-            <div class="achievement-card">
-                <div class="achievement-image">
-                    <img src="achievements/rank-certificate.jpg" alt="University Rank Holder Certificate">
-                </div>
-                <div class="achievement-content">
-                    <h3>University Rank Holder | BCA</h3>
-                    <p class="institution">Jain University</p>
-                    <p>Honored as a University Rank holder for academic excellence throughout the Bachelor of Computer Applications program. This recognition reflects a consistent commitment to mastering core computer science principles, graduating with a distinguished CGPA and a deep understanding of software development.</p>
-                </div>
-            </div>
+    <div class="mesh-bg"></div>
 
-            <div class="achievement-card">
-                <div class="achievement-icon">
-                    <i class="fas fa-code-branch"></i>
-                </div>
-                <div class="achievement-content">
-                    <h3>100 Days of Code Challenge</h3>
-                    <p>Successfully completed a 100-day rigorous coding marathon, documenting the daily progress of building AI/ML models, solving complex algorithmic problems, and mastering full-stack technologies. This challenge solidified a disciplined approach to continuous learning and technical problem-solving.</p>
-                    <a href="https://www.linkedin.com/in/chittemdheeraj/" target="_blank" class="btn-link">View Updates on LinkedIn</a>
-                </div>
-            </div>
-
+    <nav id="navbar">
+        <div class="logo">CHITTEM DHEERAJ<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div><div class="line2"></div><div class="line3"></div>
         </div>
-    </div>
-</section>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <span class="greeting">Welcome To My World!</span>
+            <h1>I'm <span class="highlight">Chittem Dheeraj</span></h1>
+            <h2 id="typewriter"></h2>
+            <p>BCA Graduate from Jain University. Specialized in turning data into insights and ideas into interactive web experiences.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary">View Work</a>
+                <a href="resume/Chittem_Dheeraj_Resume.pdf" class="btn secondary" download>Get Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-content">
+                <p>I am a highly motivated tech professional with a solid foundation in <strong>Python, SQL, and Full-Stack Web Development</strong>. Having completed my BCA at Jain University, I bridge the gap between technical logic and user-centric design.</p>
+                <div class="skills-tags">
+                    <span>Python</span><span>SQL</span><span>JavaScript</span><span>Power BI</span><span>HTML/CSS</span><span>Pandas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>Sales Insights Dashboard</h3>
+                    <p>End-to-end data analysis using Power BI and SQL to visualize business growth and regional trends.</p>
+                    <div class="p-tech">#PowerBI #SQL</div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-database"></i></div>
+                    <h3>Order Management</h3>
+                    <p>A robust MySQL system designed for high-efficiency data storage and relational management.</p>
+                    <div class="p-tech">#MySQL #Python</div>
+                </div>
+                <div class="glass-card project-card">
+                    <div class="p-icon"><i class="fas fa-code"></i></div>
+                    <h3>Smart Web Tracker</h3>
+                    <p>Interactive task management application focused on seamless UI and local persistence.</p>
+                    <div class="p-tech">#JavaScript #Web</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Let's Build Together</h2>
+            <div class="social-icons">
+                <a href="mailto:chittemdheeraj22@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/chittem-dheeraj-92012a31a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2026 Chittem Dheeraj | Designed with Passion | Thank You For Visiting My Portfolio.....Have a Great Day.....!</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
