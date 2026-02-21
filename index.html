@@ -5,12 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chittem Dheeraj | Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
 </head>
 <body>
 
 <header>
   <nav>
     <h1 class="logo">Chittem Dheeraj</h1>
+    <!-- Theme Toggle Button -->
+<button id="themeToggle" class="theme-toggle">🌙</button>
+
+<!-- Hamburger -->
+<div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -23,7 +36,9 @@
 
 <section id="home" class="section">
   <h2>Welcome to My Portfolio</h2>
-  <h1>Hi, I'm Chittem Dheeraj</h1>
+  <h1>
+  Hi, I'm <span id="typed-text"></span>
+</h1>
   <p>
     BCA Graduate with hands-on experience in Python, SQL,
     Web Development, and Data Analytics.
@@ -92,9 +107,35 @@
 
 <section id="contact" class="section">
   <h2>Contact</h2>
-  <p>Email: chittemdheeraj@gmail.com</p>
-  <p>GitHub: github.com/Chittemdheeraj</p>
-  <p>LinkedIn: linkedin.com/in/chittemdheeraj</p>
+
+  <p>
+    <i class="fa-solid fa-phone"></i>
+    <strong>Phone:</strong> +91 9000019288
+  </p>
+
+  <p>
+    <i class="fa-solid fa-envelope"></i>
+    <strong>Email:</strong>
+    <a href="mailto:chittemdheeraj@gmail.com">
+      chittemdheeraj@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <i class="fa-brands fa-github"></i>
+    <strong>GitHub:</strong>
+    <a href="https://github.com/Chittemdheeraj" target="_blank">
+      github.com/Chittemdheeraj
+    </a>
+  </p>
+
+  <p>
+    <i class="fa-brands fa-linkedin"></i>
+    <strong>LinkedIn:</strong>
+    <a href="https://www.linkedin.com/in/chittemdheeraj" target="_blank">
+      linkedin.com/in/chittemdheeraj
+    </a>
+  </p>
 </section>
 
 <footer>
