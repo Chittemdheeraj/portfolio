@@ -118,3 +118,89 @@ footer {
     padding: 50px 20px;
   }
 }
+/* ---------- THEME VARIABLES ---------- */
+:root {
+  --bg: radial-gradient(circle at top, #0f2027, #000 60%);
+  --text: #eaeaea;
+  --accent: #00ffff;
+  --card: rgba(255, 255, 255, 0.05);
+}
+
+body.light {
+  --bg: #f4f6f8;
+  --text: #222;
+  --accent: #0066ff;
+  --card: #ffffff;
+}
+
+/* Apply variables */
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* Header tweaks */
+header {
+  background: #0b0f14;
+}
+
+body.light header {
+  background: #ffffff;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: 15px;
+  color: var(--accent);
+}
+
+/* Project cards adapt */
+.project {
+  background: var(--card);
+}
+
+/* ---------- HAMBURGER ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: var(--accent);
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Mobile nav */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    background: #0b0f14;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    padding: 15px;
+  }
+
+  body.light .nav-links {
+    background: #ffffff;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
