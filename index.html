@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chittem Dheeraj | Portfolio</title>
 
   <!-- Fonts & Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
 
-<div class="mesh-bg"></div>
+  <!-- Background -->
+  <div class="bg-gradient"></div>
 
-<nav>
-  <div class="logo">CHITTEM DHEERAJ<span>.</span></div>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">CHITTEM DHEERAJ<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="burger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#achievements">Achievements</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-
-  <button id="themeToggle">🌙</button>
-
-  <div class="burger">
-    <div></div><div></div><div></div>
-  </div>
-</nav>
-
-<header class="hero" id="home">
-  <div class="hero-content">
-    <span class="greeting">Welcome To My World</span>
-    <h1>I'm <span class="highlight">Chittem Dheeraj</span></h1>
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <h1>Hi, I'm <span>Chittem Dheeraj</span></h1>
     <h2 id="typewriter"></h2>
     <p>BCA Graduate focused on Data, Web, and Software Development.</p>
-  </div>
-</header>
+  </header>
 
-<section id="about" class="section">
-  <h2 class="section-title">About Me</h2>
-  <div class="glass-card">
-    <p>
-      I am a BCA graduate with hands-on experience in
-      <strong>Python, SQL, JavaScript, HTML, CSS, Power BI</strong>.
-      I enjoy transforming data into insights and building user-friendly web applications.
-    </p>
-  </div>
-</section>
-
-<section id="projects" class="section">
-  <h2 class="section-title">Projects</h2>
-  <div class="projects-grid">
-    <div class="glass-card">
-      <h3>Sales Insights Dashboard</h3>
-      <p>Power BI & SQL based dashboard for sales analysis.</p>
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a BCA graduate with hands-on experience in
+        <strong>Python, SQL, JavaScript, HTML, CSS, and Power BI</strong>.
+        I enjoy transforming data into insights and building user-friendly web applications.
+      </p>
     </div>
-    <div class="glass-card">
-      <h3>Order Management System</h3>
-      <p>Python & MySQL based system for managing orders.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card">Sales Insights Dashboard (Power BI, SQL)</div>
+      <div class="card">Order Management System (Python, MySQL)</div>
+      <div class="card">Smart Web Tracker (JavaScript)</div>
     </div>
-    <div class="glass-card">
-      <h3>Smart Web Tracker</h3>
-      <p>JavaScript based web activity tracker.</p>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <div class="card center">
+      <p><strong>University Rank Holder</strong> – BCA Program</p>
+      <img src="./Achievements/Chittem%20Dheeraj%20Rank%20image.jpeg" alt="Rank Achievement">
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="achievements" class="section">
-  <h2 class="section-title">Achievements</h2>
-  <div class="glass-card">
-    <p>
-      Secured a <strong>University Rank</strong> during my BCA program through consistent academic excellence.
-    </p>
-    <img src="./Achievements/Chittem%20Dheeraj%20Rank%20image.jpeg" class="achievement-img">
-  </div>
-</section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p><i class="fa-solid fa-phone"></i> +91 9000019288</p>
+      <p><i class="fa-solid fa-envelope"></i> chittemdheeraj@gmail.com</p>
+      <p><i class="fa-brands fa-github"></i> github.com/Chittemdheeraj</p>
+      <p><i class="fa-brands fa-linkedin"></i> linkedin.com/in/chittemdheeraj</p>
+    </div>
+  </section>
 
-<footer id="contact">
-  <h2>Contact</h2>
-  <div class="social-icons">
-    <a href="mailto:chittemdheeraj@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/Chittemdheeraj" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/chittemdheeraj" target="_blank"><i class="fab fa-linkedin"></i></a>
-  </div>
-</footer>
+  <footer>
+    © 2026 Chittem Dheeraj
+  </footer>
 
-<script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
