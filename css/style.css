@@ -7,14 +7,15 @@
 
 body {
   line-height: 1.6;
-  color: #333;
-  background: #ffffff;
+  color: #eaeaea;
+  background: radial-gradient(circle at top, #0f2027, #000000 60%);
 }
 
 /* HEADER */
 header {
-  background: #222;
+  background: #0b0f14;
   padding: 15px 40px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
 nav {
@@ -24,7 +25,8 @@ nav {
 }
 
 .logo {
-  color: #fff;
+  color: #00ffff;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -34,50 +36,75 @@ nav {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #eaeaea;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #00ffff;
 }
 
 /* SECTIONS */
 .section {
-  padding: 60px 40px;
+  padding: 70px 40px;
   max-width: 900px;
   margin: auto;
 }
 
 .section h2 {
   margin-bottom: 15px;
+  color: #00ffff;
 }
 
 .section p {
   margin-bottom: 15px;
+  color: #d0d0d0;
 }
 
 /* PROJECTS */
 .project {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 15px 20px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
 /* ACHIEVEMENT IMAGE */
 .achievement-img {
   display: block;
-  margin: 20px auto 0;
+  margin: 30px auto 0;
   max-width: 420px;
   width: 100%;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 2px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.achievement-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 45px rgba(0, 255, 255, 0.6);
+}
+
+/* CONTACT */
+#contact p {
+  color: #cfcfcf;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  background: #f2f2f2;
+  background: #05080c;
   margin-top: 40px;
+  color: #9ffcff;
 }
 
 /* RESPONSIVE */
@@ -88,6 +115,6 @@ footer {
   }
 
   .section {
-    padding: 40px 20px;
+    padding: 50px 20px;
   }
 }
