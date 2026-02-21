@@ -204,3 +204,18 @@ body.light header {
     display: flex;
   }
 }
+#contact i {
+  color: var(--accent);
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+#contact a {
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
