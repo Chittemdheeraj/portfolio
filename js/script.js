@@ -1,40 +1,23 @@
-// Smooth Scrolling for Navigation
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+// Smooth Scrolling for Nav Links
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        const section = document.querySelector(this.getAttribute('href'));
+        section.scrollIntoView({ behavior: 'smooth' });
     });
 });
 
-// Simple Contact Form Interaction
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        alert('Thanks, Dheeraj! Your message has been sent successfully.');
-        contactForm.reset();
-    });
-}
-
-// Fade-in animation on scroll
-const observerOptions = {
-    threshold: 0.1
-};
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+// Animation on Scroll for Achievement Cards
+const reveal = () => {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        const windowHeight = window.innerHeight;
+        const revealTop = card.getBoundingClientRect().top;
+        if (revealTop < windowHeight - 100) {
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
         }
     });
-}, observerOptions);
+};
 
-document.querySelectorAll('.card').forEach(card => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = 'all 0.6s ease-out';
-    observer.observe(card);
-});
+window.addEventListener('scroll', reveal);
